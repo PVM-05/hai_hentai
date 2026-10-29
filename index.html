@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thanh niên bị nấc ngẩn người trong giờ học</title>
+  <title>Album Hải Hentai - Bộ Sưu Tập Tuyển Chọn</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
   <style>
     * {
       box-sizing: border-box;
@@ -12,136 +13,130 @@
     }
 
     body {
-      background-color: #131313;
+      background-color: #0e0e0e;
       color: #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-      user-select: none;
       -webkit-font-smoothing: antialiased;
+      user-select: none;
     }
 
-    /* Top management bar (can be toggled or hidden) */
-    .top-controls {
+    /* Top Brand Navigation Bar */
+    .site-nav {
       width: 100%;
-      background: #1c1c1c;
-      border-bottom: 1px solid #2d2d2d;
-      padding: 8px 16px;
+      background: #161616;
+      border-bottom: 1px solid #282828;
+      padding: 10px 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 12px;
-      font-size: 13px;
-      z-index: 999;
-      transition: all 0.25s ease;
+      gap: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 500;
     }
 
-    .top-controls.hidden {
-      display: none !important;
-    }
-
-    .toolbar-group {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .btn-tool {
-      background: #2b2b2b;
-      color: #e0e0e0;
-      border: 1px solid #404040;
-      padding: 6px 12px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 13px;
-      font-weight: 500;
+    .brand-logo {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      transition: all 0.15s ease;
-    }
-
-    .btn-tool:hover {
-      background: #383838;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      text-decoration: none;
       color: #fff;
-      border-color: #555;
-    }
-
-    .btn-tool.primary {
-      background: #e43828;
-      border-color: #e43828;
-      color: #fff;
-    }
-
-    .btn-tool.primary:hover {
-      background: #f54030;
-    }
-
-    .key-hint {
-      color: #888;
-      font-size: 12px;
-    }
-
-    /* Floating show-bar button when hidden */
-    .btn-floating-toggle {
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      background: rgba(30, 30, 30, 0.85);
-      border: 1px solid #444;
-      color: #ccc;
-      padding: 4px 10px;
-      border-radius: 4px;
-      font-size: 11px;
       cursor: pointer;
-      z-index: 1000;
-      backdrop-filter: blur(4px);
-      opacity: 0.4;
-      transition: opacity 0.2s;
     }
 
-    .btn-floating-toggle:hover {
-      opacity: 1;
+    .brand-logo .brand-badge {
+      background-color: #ff9000;
+      color: #000000;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 19px;
+      font-weight: 900;
     }
 
-    /* Outer Wrapper matching 1024px design */
-    .layout-container {
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-link {
+      color: #b0b0b0;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.15s;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: #ff9000;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: #252525;
+      border: 1px solid #383838;
+      border-radius: 20px;
+      padding: 5px 14px;
+      width: 220px;
+      transition: all 0.2s;
+    }
+
+    .search-box:focus-within {
+      border-color: #ff9000;
+      background: #202020;
+      width: 260px;
+    }
+
+    .search-box input {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: 13px;
+      width: 100%;
+    }
+
+    .search-box input::placeholder {
+      color: #777;
+    }
+
+    /* Main Container matching screenshot layout */
+    .main-wrapper {
       width: 100%;
       max-width: 1024px;
-      margin: 0 auto;
       background-color: #131313;
-      display: flex;
-      flex-direction: column;
+      margin: 16px auto 40px auto;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
     }
 
-    /* Title Row */
-    .header-section {
-      padding: 24px 20px 16px 20px;
+    /* Title Bar */
+    .title-header {
+      padding: 22px 20px 14px 20px;
       border-bottom: 1px solid #252525;
     }
 
-    .page-title {
+    .media-title {
       font-size: 32px;
       font-weight: 500;
       color: #f1f1f1;
       letter-spacing: -0.3px;
-      outline: none;
       line-height: 1.25;
       word-break: break-word;
+      transition: opacity 0.2s;
     }
 
-    .page-title[contenteditable="true"]:focus {
-      background: #1f1f1f;
-      outline: 1px dashed #777;
-      border-radius: 4px;
-      padding: 0 4px;
-    }
-
-    /* Video Player Area */
-    .video-viewport {
+    /* Viewer / Screen Area */
+    .screen-container {
       position: relative;
       width: 100%;
       background: #000000;
@@ -153,53 +148,83 @@
       cursor: pointer;
     }
 
-    video {
-      width: 100%;
-      height: 100%;
+    .active-image {
+      max-width: 100%;
+      max-height: 100%;
       object-fit: contain;
-      background: #000000;
-      outline: none;
+      display: block;
+      transition: opacity 0.25s ease, transform 0.25s ease;
     }
 
-    /* Drag & Drop Visual Indicator */
-    .drag-drop-zone {
+    /* Screen Nav Overlay (Next / Prev arrows) */
+    .screen-overlay {
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.85);
-      border: 3px dashed #e43828;
       display: flex;
-      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, transparent 20%, transparent 80%, rgba(0,0,0,0.3) 100%);
+      pointer-events: none;
+    }
+
+    .screen-container:hover .screen-overlay {
+      opacity: 1;
+    }
+
+    .nav-arrow-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(20, 20, 20, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      display: flex;
       align-items: center;
       justify-content: center;
-      gap: 12px;
-      opacity: 0;
-      pointer-events: none;
-      visibility: hidden;
-      transition: all 0.2s ease;
-      z-index: 30;
+      cursor: pointer;
+      pointer-events: auto;
+      transition: all 0.15s ease;
+      backdrop-filter: blur(4px);
     }
 
-    .video-viewport.is-dragging .drag-drop-zone {
-      opacity: 1;
-      visibility: visible;
+    .nav-arrow-btn:hover {
+      background: #e43828;
+      border-color: #e43828;
+      transform: scale(1.08);
     }
 
-    .drag-drop-zone p {
-      font-size: 18px;
-      font-weight: 500;
-      color: #fff;
+    .nav-arrow-btn:active {
+      transform: scale(0.95);
     }
 
-    /* Bottom Info & Action Bar */
-    .info-footer {
-      padding: 16px 16px 26px 16px;
+    .screen-top-badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: rgba(0, 0, 0, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #eee;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 600;
+      backdrop-filter: blur(4px);
+      pointer-events: auto;
+    }
+
+    /* Bottom Info & Stats Section (Exact replica of original image) */
+    .meta-details {
+      padding: 16px 16px 24px 16px;
       display: flex;
       flex-direction: column;
       gap: 12px;
     }
 
     /* Row 1: Episodes (Left) and Stats (Right) */
-    .action-row-1 {
+    .controls-row-1 {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -207,14 +232,13 @@
       flex-wrap: wrap;
     }
 
-    .episodes-wrapper {
+    .episodes-bar {
       display: flex;
       align-items: center;
       gap: 12px;
     }
 
-    /* Badges Style */
-    .badge-btn {
+    .ep-button {
       height: 62px;
       padding: 0 24px;
       border-radius: 8px;
@@ -230,37 +254,33 @@
       outline: none;
     }
 
-    .badge-btn:active {
+    .ep-button:active {
       transform: scale(0.96);
     }
 
-    .badge-red {
+    .ep-button.active {
       background-color: #e43828;
       color: #ffffff;
     }
 
-    .badge-red:hover {
-      background-color: #ef4535;
-    }
-
-    .badge-dark {
+    .ep-button.inactive {
       background-color: #242424;
       color: #ffffff;
     }
 
-    .badge-dark:hover {
-      background-color: #303030;
+    .ep-button.inactive:hover {
+      background-color: #323232;
     }
 
-    /* Stats items group on the right */
-    .stats-group {
+    /* 4 Stat Badges matching original */
+    .stats-container {
       display: flex;
       align-items: center;
       gap: 12px;
       flex-wrap: wrap;
     }
 
-    .stat-badge {
+    .stat-pill {
       height: 62px;
       background-color: #242424;
       border-radius: 8px;
@@ -274,29 +294,17 @@
       color: #ffffff;
       cursor: pointer;
       transition: background-color 0.15s, transform 0.1s;
-      outline: none;
     }
 
-    .stat-badge:hover {
+    .stat-pill:hover {
       background-color: #2e2e2e;
     }
 
-    .stat-badge:active {
+    .stat-pill:active {
       transform: scale(0.97);
     }
 
-    .stat-badge .stat-text {
-      outline: none;
-    }
-
-    .stat-badge .stat-text[contenteditable="true"]:focus {
-      background: #3a3a3a;
-      border-radius: 3px;
-      padding: 0 3px;
-    }
-
-    /* SVG Icons matching image */
-    .badge-icon {
+    .stat-icon {
       width: 28px;
       height: 28px;
       display: block;
@@ -308,29 +316,28 @@
       flex-shrink: 0;
     }
 
-    .badge-icon.heart-fill {
+    .stat-icon.heart-filled {
       fill: #fa2b4d;
       stroke: #fa2b4d;
     }
 
-    /* Interactive state styles */
-    .stat-badge.liked {
+    .stat-pill.liked {
       background-color: #1f364d;
     }
-    .stat-badge.liked .badge-icon {
+    .stat-pill.liked .stat-icon {
       stroke: #3897f0;
       fill: rgba(56, 151, 240, 0.25);
     }
 
-    .stat-badge.disliked {
+    .stat-pill.disliked {
       background-color: #442222;
     }
-    .stat-badge.disliked .badge-icon {
+    .stat-pill.disliked .stat-icon {
       stroke: #ff4747;
       fill: rgba(255, 71, 71, 0.25);
     }
 
-    .heart-bounce .badge-icon {
+    .heart-pulse .stat-icon {
       animation: heartPulse 0.45s ease;
     }
 
@@ -341,13 +348,13 @@
     }
 
     /* Row 2: Code badge */
-    .action-row-2 {
+    .controls-row-2 {
       display: flex;
       align-items: center;
       gap: 12px;
     }
 
-    .code-badge {
+    .code-pill {
       height: 56px;
       background-color: #242424;
       border-radius: 8px;
@@ -359,122 +366,248 @@
       align-items: center;
       cursor: pointer;
       transition: background-color 0.15s, transform 0.1s;
-      outline: none;
     }
 
-    .code-badge:hover {
-      background-color: #2f2f2f;
+    .code-pill:hover {
+      background-color: #303030;
+      color: #fff;
     }
 
-    .code-badge:active {
+    .code-pill:active {
       transform: scale(0.98);
     }
 
-    .code-badge[contenteditable="true"]:focus {
-      background: #3a3a3a;
-      outline: 1px dashed #888;
-      border-radius: 4px;
-    }
-
-    /* Modal for URL input */
-    .modal-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.78);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 2000;
-      backdrop-filter: blur(3px);
-    }
-
-    .modal-overlay.active {
-      display: flex;
-    }
-
-    .modal-box {
-      background: #1e1e1e;
-      border: 1px solid #333;
-      border-radius: 10px;
-      padding: 24px;
-      width: 90%;
-      max-width: 500px;
-      box-shadow: 0 12px 36px rgba(0,0,0,0.8);
-    }
-
-    .modal-box h3 {
-      font-size: 19px;
-      margin-bottom: 14px;
-      color: #fff;
-    }
-
-    .modal-input {
+    /* Gallery Section (Thư viện Album Hải Hentai) */
+    .gallery-section {
       width: 100%;
-      padding: 12px 14px;
-      background: #111;
-      border: 1px solid #444;
-      border-radius: 6px;
-      color: #fff;
-      font-size: 15px;
-      margin-bottom: 18px;
-      outline: none;
+      max-width: 1024px;
+      margin: 0 auto 60px auto;
+      padding: 0 10px;
     }
 
-    .modal-input:focus {
-      border-color: #e43828;
-    }
-
-    .modal-footer {
+    .gallery-header {
       display: flex;
-      justify-content: flex-end;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #262626;
+    }
+
+    .gallery-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
       gap: 10px;
     }
 
-    /* Toast Notification */
-    .toast-popup {
+    .gallery-count {
+      color: #888;
+      font-size: 14px;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .album-card {
+      background: #191919;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 1px solid #2a2a2a;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .album-card:hover {
+      transform: translateY(-4px);
+      border-color: #e43828;
+      box-shadow: 0 8px 24px rgba(228, 56, 40, 0.2);
+    }
+
+    .album-card.active-card {
+      border-color: #e43828;
+      background: #201818;
+    }
+
+    .card-thumb-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000;
+      overflow: hidden;
+    }
+
+    .card-thumb {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .album-card:hover .card-thumb {
+      transform: scale(1.05);
+    }
+
+    .card-badge-ep {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background: #e43828;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+    }
+
+    .card-badge-hd {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    .card-info {
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #f0f0f0;
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-meta-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #999;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    .card-code {
+      background: #2c2c2c;
+      color: #ff9000;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-weight: 600;
+      font-family: monospace;
+    }
+
+    /* Lightbox Modal */
+    .lightbox-modal {
       position: fixed;
-      bottom: 28px;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.95);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .lightbox-modal.open {
+      display: flex;
+    }
+
+    .lightbox-img {
+      max-width: 95vw;
+      max-height: 92vh;
+      object-fit: contain;
+      border-radius: 4px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      background: rgba(40, 40, 40, 0.8);
+      border: 1px solid #555;
+      color: #fff;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      font-size: 22px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s;
+    }
+
+    .lightbox-close:hover {
+      background: #e43828;
+      border-color: #e43828;
+    }
+
+    /* Toast Notification */
+    .toast-msg {
+      position: fixed;
+      bottom: 24px;
       left: 50%;
-      transform: translateX(-50%) translateY(120px);
+      transform: translateX(-50%) translateY(100px);
       background: #252525;
       border: 1px solid #444;
       color: #fff;
       padding: 10px 22px;
       border-radius: 30px;
       font-size: 14px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.6);
       transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
       opacity: 0;
       pointer-events: none;
       z-index: 3000;
     }
 
-    .toast-popup.visible {
+    .toast-msg.show {
       transform: translateX(-50%) translateY(0);
       opacity: 1;
     }
 
-    /* Responsive scaling for mobile / tablets */
+    /* Responsive Queries */
     @media (max-width: 960px) {
-      .page-title {
+      .media-title {
         font-size: 24px;
       }
-      .badge-btn {
+      .ep-button {
         height: 50px;
         padding: 0 16px;
         font-size: 20px;
       }
-      .stat-badge {
+      .stat-pill {
         height: 50px;
         padding: 0 14px;
         font-size: 19px;
         gap: 8px;
       }
-      .badge-icon {
+      .stat-icon {
         width: 22px;
         height: 22px;
       }
-      .code-badge {
+      .code-pill {
         height: 48px;
         font-size: 19px;
         padding: 0 16px;
@@ -482,152 +615,133 @@
     }
 
     @media (max-width: 640px) {
-      .header-section {
+      .site-nav {
+        padding: 10px 14px;
+        flex-wrap: wrap;
+      }
+      .nav-links {
+        display: none;
+      }
+      .search-box {
+        width: 140px;
+      }
+      .title-header {
         padding: 16px 14px 12px 14px;
       }
-      .page-title {
+      .media-title {
         font-size: 19px;
       }
-      .badge-btn {
+      .ep-button {
         height: 42px;
         padding: 0 14px;
         font-size: 17px;
       }
-      .stats-group {
+      .stats-container {
         gap: 8px;
       }
-      .stat-badge {
+      .stat-pill {
         height: 42px;
         padding: 0 10px;
         font-size: 15px;
         gap: 6px;
       }
-      .badge-icon {
+      .stat-icon {
         width: 18px;
         height: 18px;
       }
-      .code-badge {
+      .code-pill {
         height: 42px;
         font-size: 16px;
       }
-      .top-controls {
-        flex-direction: column;
-        align-items: flex-start;
+      .cards-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Hidden file selector -->
-  <input type="file" id="filePicker" accept="video/*" style="display: none;">
+  <!-- Top Navigation Bar -->
+  <header class="site-nav">
+    <a href="#" class="brand-logo" onclick="selectEpisode(0); return false;">
+      HẢI<span class="brand-badge">HENTAI</span>
+    </a>
 
-  <!-- Quick Action Top Toolbar -->
-  <header class="top-controls" id="topToolbar">
-    <div class="toolbar-group">
-      <button class="btn-tool primary" id="btnUpload" title="Tải file video từ máy tính của bạn">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-        Chọn video từ máy
-      </button>
+    <nav class="nav-links">
+      <a href="#" class="nav-link active" onclick="selectEpisode(0); return false;">Album Tuyển Chọn</a>
+      <a href="#gallerySection" class="nav-link">Thư Viện Ảnh</a>
+      <a href="https://github.com/PVM-05/HAI.EXE" target="_blank" class="nav-link">GitHub Repo</a>
+    </nav>
 
-      <button class="btn-tool" id="btnLink" title="Nhập link video trực tiếp online (MP4/WebM)">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-        Nhập link video
-      </button>
-
-      <button class="btn-tool" id="btnEditMode" title="Chỉnh sửa trực tiếp tiêu đề, mã số, lượt xem, like...">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
-        Sửa chữ / thông số
-      </button>
-
-      <button class="btn-tool" id="btnPlayDemo" title="Phát video demo có sẵn">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-        Phát video mẫu
-      </button>
-    </div>
-
-    <div class="toolbar-group">
-      <span class="key-hint">Phím tắt: Bấm <b>H</b> để ẩn/hiện thanh công cụ chụp ảnh</span>
-      <button class="btn-tool" id="btnHideToolbar" title="Ẩn thanh này để hiển thị đúng giao diện chuẩn 100%">
-        Ẩn thanh này
-      </button>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Tìm kiếm album...">
     </div>
   </header>
 
-  <!-- Button to bring back toolbar if hidden -->
-  <button class="btn-floating-toggle" id="btnShowToolbar" style="display: none;">
-    Hiện thanh công cụ (H)
-  </button>
+  <!-- Main Viewer (Exact Meme Screenshot replica) -->
+  <main class="main-wrapper">
 
-  <!-- Main Content matching screenshot layout exactly -->
-  <main class="layout-container">
-
-    <!-- Top Title -->
-    <section class="header-section">
-      <h1 class="page-title" id="pageTitle" contenteditable="false" spellcheck="false">
-        Thanh niên bị nấc ngẩn người trong giờ học
-      </h1>
+    <!-- Title Section -->
+    <section class="title-header">
+      <h1 class="media-title" id="displayTitle">Thanh niên bị nấc ngẩn người trong giờ học</h1>
     </section>
 
-    <!-- Video Area -->
-    <section class="video-viewport" id="viewport">
-      <video id="mainVideo" poster="poster.jpg" controls playsinline preload="metadata">
-        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
-        Trình duyệt không hỗ trợ thẻ video.
-      </video>
+    <!-- Screen / Image Area -->
+    <section class="screen-container" id="screenViewer" title="Nhấp vào để xem ảnh phóng to">
+      <img src="./images/nac_ngan_nguoi.jpg" alt="Meme preview" class="active-image" id="mainDisplayImg">
 
-      <!-- Drag & drop prompt -->
-      <div class="drag-drop-zone">
-        <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="#e43828" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-        <p>Thả video vào đây để phát ngay</p>
+      <!-- Navigation Arrows Overlay -->
+      <div class="screen-overlay">
+        <button class="nav-arrow-btn" id="btnPrev" title="Tập trước (Phím mũi tên Trái)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="nav-arrow-btn" id="btnNext" title="Tập tiếp theo (Phím mũi tên Phải)">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
       </div>
+
+      <div class="screen-top-badge" id="screenCounter">Tập 1 / 2</div>
     </section>
 
-    <!-- Meta section underneath video -->
-    <section class="info-footer">
-      <!-- Row 1: Episodes and Statistics -->
-      <div class="action-row-1">
-
-        <!-- Episodes (#1, #2) -->
-        <div class="episodes-wrapper">
-          <button class="badge-btn badge-red" id="badgeEp1">#1</button>
-          <button class="badge-btn badge-dark" id="badgeEp2">#2</button>
+    <!-- Meta Details & Statistics Section -->
+    <section class="meta-details">
+      <!-- Row 1: Episodes and Stats -->
+      <div class="controls-row-1">
+        <!-- Episode badges (#1, #2) -->
+        <div class="episodes-bar" id="episodesContainer">
+          <!-- Dynamically populated -->
         </div>
 
-        <!-- 4 Stats Badges -->
-        <div class="stats-group">
-          <!-- 1. Likes -->
-          <div class="stat-badge" id="badgeLike" title="Lượt thích">
-            <span class="stat-text" id="txtLike">2.884</span>
-            <!-- Thumbs up icon matching screenshot -->
-            <svg class="badge-icon" viewBox="0 0 24 24">
+        <!-- 4 Stats Badges matching screenshot -->
+        <div class="stats-container">
+          <!-- Like -->
+          <div class="stat-pill" id="pillLike" title="Thích">
+            <span class="stat-val" id="valLike">2.884</span>
+            <svg class="stat-icon" viewBox="0 0 24 24">
               <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>
             </svg>
           </div>
 
-          <!-- 2. Dislikes -->
-          <div class="stat-badge" id="badgeDislike" title="Lượt không thích">
-            <span class="stat-text" id="txtDislike">1.374</span>
-            <!-- Thumbs down icon matching screenshot -->
-            <svg class="badge-icon" viewBox="0 0 24 24">
+          <!-- Dislike -->
+          <div class="stat-pill" id="pillDislike" title="Không thích">
+            <span class="stat-val" id="valDislike">1.374</span>
+            <svg class="stat-icon" viewBox="0 0 24 24">
               <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-3"/>
             </svg>
           </div>
 
-          <!-- 3. Rating Heart -->
-          <div class="stat-badge" id="badgeHeart" title="Tỷ lệ yêu thích">
-            <span class="stat-text" id="txtHeart">68%</span>
-            <!-- Solid filled red heart icon matching screenshot -->
-            <svg class="badge-icon heart-fill" viewBox="0 0 24 24">
+          <!-- Heart -->
+          <div class="stat-pill" id="pillHeart" title="Tỷ lệ yêu thích">
+            <span class="stat-val" id="valHeart">68%</span>
+            <svg class="stat-icon heart-filled" viewBox="0 0 24 24">
               <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
             </svg>
           </div>
 
-          <!-- 4. Views -->
-          <div class="stat-badge" id="badgeView" title="Lượt xem">
-            <span class="stat-text" id="txtView">3.3M</span>
-            <!-- Eye icon matching screenshot -->
-            <svg class="badge-icon" viewBox="0 0 24 24">
+          <!-- Views -->
+          <div class="stat-pill" id="pillView" title="Lượt xem">
+            <span class="stat-val" id="valView">3.3M</span>
+            <svg class="stat-icon" viewBox="0 0 24 24">
               <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
               <circle cx="12" cy="12" r="3"/>
             </svg>
@@ -636,250 +750,269 @@
       </div>
 
       <!-- Row 2: Code badge (CMT8-1945) -->
-      <div class="action-row-2">
-        <div class="code-badge" id="badgeCode" contenteditable="false" spellcheck="false" title="Nhấp để sao chép hoặc sửa mã">
+      <div class="controls-row-2">
+        <div class="code-pill" id="pillCode" title="Nhấp để sao chép mã tác phẩm">
           CMT8-1945
         </div>
       </div>
     </section>
   </main>
 
-  <!-- URL Modal -->
-  <div class="modal-overlay" id="urlModal">
-    <div class="modal-box">
-      <h3>Dán đường link video (MP4 / WebM / M3U8)</h3>
-      <input type="text" class="modal-input" id="urlInputField" placeholder="https://domain.com/video.mp4">
-      <div class="modal-footer">
-        <button class="btn-tool" id="btnCancelModal">Hủy</button>
-        <button class="btn-tool primary" id="btnSubmitModal">Phát video</button>
-      </div>
+  <!-- Gallery Section -->
+  <section class="gallery-section" id="gallerySection">
+    <div class="gallery-header">
+      <h2 class="gallery-title">🔥 Thư Viện Album Hải Hentai</h2>
+      <span class="gallery-count" id="galleryCount">2 tác phẩm</span>
     </div>
+
+    <div class="cards-grid" id="cardsGrid">
+      <!-- Dynamically generated cards -->
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <button class="lightbox-close" id="btnCloseLightbox" title="Đóng (ESC)">✕</button>
+    <img src="" alt="Full preview" class="lightbox-img" id="lightboxImg">
   </div>
 
   <!-- Toast Notification -->
-  <div class="toast-popup" id="toast">Thông báo</div>
+  <div class="toast-msg" id="toastMsg">Thông báo</div>
 
   <script>
-    const video = document.getElementById('mainVideo');
-    const viewport = document.getElementById('viewport');
-    const filePicker = document.getElementById('filePicker');
-    const btnUpload = document.getElementById('btnUpload');
-    const btnLink = document.getElementById('btnLink');
-    const btnEditMode = document.getElementById('btnEditMode');
-    const btnPlayDemo = document.getElementById('btnPlayDemo');
-    const btnHideToolbar = document.getElementById('btnHideToolbar');
-    const btnShowToolbar = document.getElementById('btnShowToolbar');
-    const topToolbar = document.getElementById('topToolbar');
+    // Album Data
+    const albumList = [
+      {
+        id: 1,
+        title: "Thanh niên bị nấc ngẩn người trong giờ học",
+        code: "CMT8-1945",
+        image: "./images/nac_ngan_nguoi.jpg",
+        likes: "2.884",
+        dislikes: "1.374",
+        heart: "68%",
+        views: "3.3M",
+        quality: "4K HD"
+      },
+      {
+        id: 2,
+        title: "Gakuen de jikan - Ngưng đọng thời gian học đường",
+        code: "GDJ-1945",
+        image: "./images/gakuen_de_jikan.png",
+        likes: "4.520",
+        dislikes: "128",
+        heart: "98%",
+        views: "5.7M",
+        quality: "1080P"
+      }
+    ];
 
-    const urlModal = document.getElementById('urlModal');
-    const urlInputField = document.getElementById('urlInputField');
-    const btnCancelModal = document.getElementById('btnCancelModal');
-    const btnSubmitModal = document.getElementById('btnSubmitModal');
-    const toast = document.getElementById('toast');
+    let currentIndex = 0;
 
-    const pageTitle = document.getElementById('pageTitle');
-    const badgeCode = document.getElementById('badgeCode');
-    const badgeEp1 = document.getElementById('badgeEp1');
-    const badgeEp2 = document.getElementById('badgeEp2');
-    const badgeLike = document.getElementById('badgeLike');
-    const badgeDislike = document.getElementById('badgeDislike');
-    const badgeHeart = document.getElementById('badgeHeart');
+    // Elements
+    const displayTitle = document.getElementById('displayTitle');
+    const mainDisplayImg = document.getElementById('mainDisplayImg');
+    const screenCounter = document.getElementById('screenCounter');
+    const episodesContainer = document.getElementById('episodesContainer');
+    const cardsGrid = document.getElementById('cardsGrid');
+    const galleryCount = document.getElementById('galleryCount');
+    const searchInput = document.getElementById('searchInput');
 
-    function notify(message) {
-      toast.textContent = message;
-      toast.classList.add('visible');
-      clearTimeout(window._toastTimer);
-      window._toastTimer = setTimeout(() => {
-        toast.classList.remove('visible');
-      }, 2400);
+    const valLike = document.getElementById('valLike');
+    const valDislike = document.getElementById('valDislike');
+    const valHeart = document.getElementById('valHeart');
+    const valView = document.getElementById('valView');
+    const pillCode = document.getElementById('pillCode');
+
+    const pillLike = document.getElementById('pillLike');
+    const pillDislike = document.getElementById('pillDislike');
+    const pillHeart = document.getElementById('pillHeart');
+
+    const btnPrev = document.getElementById('btnPrev');
+    const btnNext = document.getElementById('btnNext');
+    const screenViewer = document.getElementById('screenViewer');
+
+    const lightboxModal = document.getElementById('lightboxModal');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const btnCloseLightbox = document.getElementById('btnCloseLightbox');
+    const toastMsg = document.getElementById('toastMsg');
+
+    function notify(text) {
+      toastMsg.textContent = text;
+      toastMsg.classList.add('show');
+      clearTimeout(window._toastTimeout);
+      window._toastTimeout = setTimeout(() => {
+        toastMsg.classList.remove('show');
+      }, 2300);
     }
 
-    // Toggle Toolbar (H key or buttons)
-    function toggleToolbar(show) {
-      if (show) {
-        topToolbar.classList.remove('hidden');
-        btnShowToolbar.style.display = 'none';
-      } else {
-        topToolbar.classList.add('hidden');
-        btnShowToolbar.style.display = 'block';
-        notify('Đã ẩn thanh công cụ. Nhấn H để hiện lại!');
-      }
-    }
-
-    btnHideToolbar.addEventListener('click', () => toggleToolbar(false));
-    btnShowToolbar.addEventListener('click', () => toggleToolbar(true));
-
-    window.addEventListener('keydown', (e) => {
-      // Toggle toolbar with 'H' or 'h' when not typing in text field
-      if ((e.key === 'h' || e.key === 'H') && document.activeElement.tagName !== 'INPUT' && !document.activeElement.isContentEditable) {
-        const isHidden = topToolbar.classList.contains('hidden');
-        toggleToolbar(isHidden);
-      }
-    });
-
-    // Pick video from device
-    btnUpload.addEventListener('click', () => {
-      filePicker.click();
-    });
-
-    filePicker.addEventListener('change', (e) => {
-      const file = e.target.files[0];
-      if (file) {
-        const fileUrl = URL.createObjectURL(file);
-        video.src = fileUrl;
-        video.removeAttribute('poster');
-        video.play().catch(() => {});
-        notify(`Đang phát tệp: ${file.name}`);
-      }
-    });
-
-    // Drag and drop video
-    ['dragenter', 'dragover'].forEach(name => {
-      viewport.addEventListener(name, (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        viewport.classList.add('is-dragging');
-      });
-    });
-
-    ['dragleave', 'drop'].forEach(name => {
-      viewport.addEventListener(name, (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        viewport.classList.remove('is-dragging');
-      });
-    });
-
-    viewport.addEventListener('drop', (e) => {
-      const files = e.dataTransfer.files;
-      if (files && files.length > 0) {
-        const file = files[0];
-        if (file.type.startsWith('video/')) {
-          const fileUrl = URL.createObjectURL(file);
-          video.src = fileUrl;
-          video.removeAttribute('poster');
-          video.play().catch(() => {});
-          notify(`Đã nạp video: ${file.name}`);
-        } else {
-          notify('Tệp không đúng định dạng video!');
-        }
-      }
-    });
-
-    // URL Modal
-    btnLink.addEventListener('click', () => {
-      urlModal.classList.add('active');
-      urlInputField.focus();
-    });
-
-    btnCancelModal.addEventListener('click', () => {
-      urlModal.classList.remove('active');
-    });
-
-    urlModal.addEventListener('click', (e) => {
-      if (e.target === urlModal) {
-        urlModal.classList.remove('active');
-      }
-    });
-
-    btnSubmitModal.addEventListener('click', () => {
-      const link = urlInputField.value.trim();
-      if (link) {
-        video.src = link;
-        video.removeAttribute('poster');
-        video.play().catch(() => {});
-        urlModal.classList.remove('active');
-        notify('Đã cập nhật link video!');
-      }
-    });
-
-    // Play Demo
-    btnPlayDemo.addEventListener('click', () => {
-      video.src = 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4';
-      video.removeAttribute('poster');
-      video.play().catch(() => {});
-      notify('Đang phát video mẫu!');
-    });
-
-    // Direct edit mode toggle
-    let isEditing = false;
-    btnEditMode.addEventListener('click', () => {
-      isEditing = !isEditing;
-      pageTitle.contentEditable = isEditing;
-      badgeCode.contentEditable = isEditing;
-      document.querySelectorAll('.stat-text').forEach(el => {
-        el.contentEditable = isEditing;
-      });
-
-      if (isEditing) {
-        btnEditMode.classList.add('primary');
-        btnEditMode.innerHTML = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Lưu thay đổi`;
-        notify('Chế độ sửa BẬT: Nhấp vào chữ để gõ nội dung mới');
-        pageTitle.focus();
-      } else {
-        btnEditMode.classList.remove('primary');
-        btnEditMode.innerHTML = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg> Sửa chữ / thông số`;
-        notify('Đã lưu nội dung!');
-      }
-    });
-
-    // Episode selection
-    badgeEp1.addEventListener('click', () => {
-      badgeEp1.className = 'badge-btn badge-red';
-      badgeEp2.className = 'badge-btn badge-dark';
-      notify('Đã chọn tập #1');
-    });
-
-    badgeEp2.addEventListener('click', () => {
-      badgeEp2.className = 'badge-btn badge-red';
-      badgeEp1.className = 'badge-btn badge-dark';
-      notify('Đã chọn tập #2');
-    });
-
-    // Like / Dislike interaction
-    let isLiked = false;
-    let isDisliked = false;
-
-    badgeLike.addEventListener('click', () => {
-      if (isEditing) return;
-      isLiked = !isLiked;
-      badgeLike.classList.toggle('liked', isLiked);
-      if (isLiked && isDisliked) {
-        isDisliked = false;
-        badgeDislike.classList.remove('disliked');
-      }
-    });
-
-    badgeDislike.addEventListener('click', () => {
-      if (isEditing) return;
-      isDisliked = !isDisliked;
-      badgeDislike.classList.toggle('disliked', isDisliked);
-      if (isDisliked && isLiked) {
-        isLiked = false;
-        badgeLike.classList.remove('liked');
-      }
-    });
-
-    // Heart click animation
-    badgeHeart.addEventListener('click', () => {
-      if (isEditing) return;
-      badgeHeart.classList.remove('heart-bounce');
-      void badgeHeart.offsetWidth; // trigger reflow
-      badgeHeart.classList.add('heart-bounce');
-      notify('Đã thích ❤️');
-    });
-
-    // Copy Code badge
-    badgeCode.addEventListener('click', () => {
-      if (!isEditing) {
-        const code = badgeCode.textContent.trim();
-        navigator.clipboard.writeText(code).then(() => {
-          notify(`Đã sao chép mã: ${code}`);
-        }).catch(() => {
-          notify(`Mã: ${code}`);
+    // Render Episode Buttons
+    function renderEpisodeButtons() {
+      episodesContainer.innerHTML = '';
+      albumList.forEach((item, idx) => {
+        const btn = document.createElement('button');
+        btn.className = `ep-button ${idx === currentIndex ? 'active' : 'inactive'}`;
+        btn.textContent = `#${item.id}`;
+        btn.title = item.title;
+        btn.addEventListener('click', () => {
+          selectEpisode(idx);
         });
+        episodesContainer.appendChild(btn);
+      });
+    }
+
+    // Render Album Grid Cards
+    function renderCards(filterText = '') {
+      cardsGrid.innerHTML = '';
+      const filtered = albumList.filter(item => 
+        item.title.toLowerCase().includes(filterText.toLowerCase()) || 
+        item.code.toLowerCase().includes(filterText.toLowerCase())
+      );
+
+      galleryCount.textContent = `${filtered.length} tác phẩm`;
+
+      filtered.forEach(item => {
+        const originalIndex = albumList.findIndex(a => a.id === item.id);
+        const card = document.createElement('article');
+        card.className = `album-card ${originalIndex === currentIndex ? 'active-card' : ''}`;
+        card.innerHTML = `
+          <div class="card-thumb-wrapper">
+            <img src="${item.image}" alt="${item.title}" class="card-thumb" loading="lazy">
+            <span class="card-badge-ep">TẬP ${item.id}</span>
+            <span class="card-badge-hd">${item.quality}</span>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">${item.title}</h3>
+            <div class="card-meta-row">
+              <span class="card-code">${item.code}</span>
+              <span>👁️ ${item.views} • ❤️ ${item.heart}</span>
+            </div>
+          </div>
+        `;
+        card.addEventListener('click', () => {
+          selectEpisode(originalIndex);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        cardsGrid.appendChild(card);
+      });
+    }
+
+    // Select and Switch Episode
+    function selectEpisode(index) {
+      if (index < 0) index = albumList.length - 1;
+      if (index >= albumList.length) index = 0;
+      currentIndex = index;
+
+      const current = albumList[currentIndex];
+
+      // Smooth switch transition
+      mainDisplayImg.style.opacity = '0';
+      setTimeout(() => {
+        mainDisplayImg.src = current.image;
+        mainDisplayImg.style.opacity = '1';
+      }, 150);
+
+      displayTitle.textContent = current.title;
+      valLike.textContent = current.likes;
+      valDislike.textContent = current.dislikes;
+      valHeart.textContent = current.heart;
+      valView.textContent = current.views;
+      pillCode.textContent = current.code;
+      screenCounter.textContent = `Tập ${currentIndex + 1} / ${albumList.length}`;
+
+      // Reset like/dislike status
+      pillLike.classList.remove('liked');
+      pillDislike.classList.remove('disliked');
+
+      renderEpisodeButtons();
+      renderCards(searchInput.value);
+    }
+
+    // Prev / Next Buttons
+    btnPrev.addEventListener('click', (e) => {
+      e.stopPropagation();
+      selectEpisode(currentIndex - 1);
+    });
+
+    btnNext.addEventListener('click', (e) => {
+      e.stopPropagation();
+      selectEpisode(currentIndex + 1);
+    });
+
+    // Keyboard navigation
+    window.addEventListener('keydown', (e) => {
+      if (lightboxModal.classList.contains('open')) {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') selectEpisode(currentIndex - 1), openLightbox(albumList[currentIndex].image);
+        if (e.key === 'ArrowRight') selectEpisode(currentIndex + 1), openLightbox(albumList[currentIndex].image);
+        return;
+      }
+
+      if (e.key === 'ArrowLeft') selectEpisode(currentIndex - 1);
+      if (e.key === 'ArrowRight') selectEpisode(currentIndex + 1);
+    });
+
+    // Lightbox handling
+    function openLightbox(src) {
+      lightboxImg.src = src;
+      lightboxModal.classList.add('open');
+    }
+
+    function closeLightbox() {
+      lightboxModal.classList.remove('open');
+    }
+
+    screenViewer.addEventListener('click', (e) => {
+      if (e.target.closest('.nav-arrow-btn')) return;
+      openLightbox(albumList[currentIndex].image);
+    });
+
+    btnCloseLightbox.addEventListener('click', closeLightbox);
+    lightboxModal.addEventListener('click', (e) => {
+      if (e.target === lightboxModal) closeLightbox();
+    });
+
+    // Copy Code
+    pillCode.addEventListener('click', () => {
+      const code = pillCode.textContent.trim();
+      navigator.clipboard.writeText(code).then(() => {
+        notify(`Đã sao chép mã: ${code}`);
+      }).catch(() => {
+        notify(`Mã tác phẩm: ${code}`);
+      });
+    });
+
+    // Interactive Stats
+    pillLike.addEventListener('click', () => {
+      const isLiked = pillLike.classList.toggle('liked');
+      if (isLiked) {
+        pillDislike.classList.remove('disliked');
+        notify('Đã thích tác phẩm 👍');
       }
     });
+
+    pillDislike.addEventListener('click', () => {
+      const isDisliked = pillDislike.classList.toggle('disliked');
+      if (isDisliked) {
+        pillLike.classList.remove('liked');
+        notify('Đã không thích 👎');
+      }
+    });
+
+    pillHeart.addEventListener('click', () => {
+      pillHeart.classList.remove('heart-pulse');
+      void pillHeart.offsetWidth;
+      pillHeart.classList.add('heart-pulse');
+      notify('Đã thả tim vào album ❤️');
+    });
+
+    // Live search
+    searchInput.addEventListener('input', (e) => {
+      renderCards(e.target.value.trim());
+    });
+
+    // Initialize
+    renderEpisodeButtons();
+    renderCards();
   </script>
 </body>
 </html>
