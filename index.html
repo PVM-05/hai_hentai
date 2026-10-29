@@ -2,34 +2,82 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Album Hải Hentai - Bộ Sưu Tập Tuyển Chọn</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  
+  <!-- Primary Meta Tags -->
+  <title>Hải Hentai - Bộ Sưu Tập Tuyển Chọn 4K (Official)</title>
+  <meta name="title" content="Hải Hentai - Bộ Sưu Tập Tuyển Chọn 4K (Official)">
+  <meta name="description" content="Khám phá trọn bộ tác phẩm meme Hải Hentai kinh điển: Tập 1 Thanh niên nấc ngẩn người (CMT8-1945) & Tập 2 Gakuen de jikan (GDJ-1945). Trải nghiệm giao diện sắc nét, hỗ trợ di động.">
+  <meta name="keywords" content="hải hentai, gakuen de jikan, cmt8 1945, anime meme, album hải, hải meme">
+  <meta name="author" content="PVM-05">
+  <meta name="theme-color" content="#ff9000">
+
+  <!-- Open Graph / Facebook / Zalo / Messenger Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pvm-05.github.io/hai_hentai/">
+  <meta property="og:site_name" content="Hải Hentai Hub">
+  <meta property="og:title" content="🔥 Album Hải Hentai - Bộ Sưu Tập Tuyển Chọn 4K">
+  <meta property="og:description" content="Xem trọn bộ siêu phẩm Hải Hentai: Thanh niên nấc ngẩn người & Gakuen de jikan. Trải nghiệm giao diện siêu mượt, chuẩn 4K.">
+  <meta property="og:image" content="https://pvm-05.github.io/hai_hentai/images/og_preview.jpg">
+  <meta property="og:image:secure_url" content="https://pvm-05.github.io/hai_hentai/images/og_preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Banner Hải Hentai Album Review">
+
+  <!-- Twitter Card / Discord Preview -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://pvm-05.github.io/hai_hentai/">
+  <meta name="twitter:title" content="🔥 Album Hải Hentai - Bộ Sưu Tập Tuyển Chọn 4K">
+  <meta name="twitter:description" content="Khám phá trọn bộ tác phẩm meme Hải Hentai: CMT8-1945 và Gakuen de jikan.">
+  <meta name="twitter:image" content="https://pvm-05.github.io/hai_hentai/images/og_preview.jpg">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="apple-touch-icon" href="./favicon.png">
+
   <style>
+    :root {
+      --bg-main: #0c0c0c;
+      --bg-card: #161616;
+      --bg-badge: #242424;
+      --bg-badge-hover: #323232;
+      --color-primary: #ff9000;
+      --color-red: #e43828;
+      --color-red-hover: #fa4432;
+      --text-main: #ffffff;
+      --text-muted: #9e9e9e;
+      --border-color: #242424;
+      --radius: 8px;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      -webkit-tap-highlight-color: transparent;
     }
 
     body {
-      background-color: #0e0e0e;
-      color: #ffffff;
+      background-color: var(--bg-main);
+      color: var(--text-main);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       -webkit-font-smoothing: antialiased;
-      user-select: none;
+      line-height: 1.5;
     }
 
-    /* Top Brand Navigation Bar */
+    /* Top Sticky Navigation Bar */
     .site-nav {
       width: 100%;
-      background: #161616;
-      border-bottom: 1px solid #282828;
-      padding: 10px 24px;
+      background: rgba(18, 18, 18, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 10px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -37,6 +85,12 @@
       position: sticky;
       top: 0;
       z-index: 500;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
     }
 
     .brand-logo {
@@ -48,54 +102,62 @@
       letter-spacing: -0.5px;
       text-decoration: none;
       color: #fff;
-      cursor: pointer;
     }
 
     .brand-logo .brand-badge {
-      background-color: #ff9000;
-      color: #000000;
+      background-color: var(--color-primary);
+      color: #000;
       padding: 2px 8px;
       border-radius: 4px;
-      font-size: 19px;
+      font-size: 18px;
       font-weight: 900;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 16px;
     }
 
     .nav-link {
-      color: #b0b0b0;
+      color: #b5b5b5;
       text-decoration: none;
       font-size: 14px;
       font-weight: 600;
       transition: color 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
     }
 
     .nav-link:hover, .nav-link.active {
-      color: #ff9000;
+      color: var(--color-primary);
     }
 
-    .search-box {
+    .nav-right {
       display: flex;
       align-items: center;
-      background: #252525;
-      border: 1px solid #383838;
+      gap: 12px;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: #202020;
+      border: 1px solid #333;
       border-radius: 20px;
-      padding: 5px 14px;
+      padding: 6px 14px;
       width: 220px;
       transition: all 0.2s;
     }
 
-    .search-box:focus-within {
-      border-color: #ff9000;
-      background: #202020;
+    .search-bar:focus-within {
+      border-color: var(--color-primary);
       width: 260px;
+      background: #1a1a1a;
     }
 
-    .search-box input {
+    .search-bar input {
       background: transparent;
       border: none;
       outline: none;
@@ -104,59 +166,121 @@
       width: 100%;
     }
 
-    .search-box input::placeholder {
-      color: #777;
+    .search-bar svg {
+      width: 15px;
+      height: 15px;
+      stroke: #888;
+      margin-right: 6px;
+      flex-shrink: 0;
     }
 
-    /* Main Container matching screenshot layout */
-    .main-wrapper {
+    .btn-share-top {
+      background: #252525;
+      border: 1px solid #383838;
+      color: #eee;
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s;
+    }
+
+    .btn-share-top:hover {
+      background: #333;
+      color: #fff;
+      border-color: #555;
+    }
+
+    /* Main Container */
+    .main-app {
       width: 100%;
       max-width: 1024px;
-      background-color: #131313;
-      margin: 16px auto 40px auto;
-      border-radius: 6px;
+      margin: 16px auto 30px auto;
+      background: #121212;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
       overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+      border: 1px solid var(--border-color);
     }
 
-    /* Title Bar */
-    .title-header {
-      padding: 22px 20px 14px 20px;
-      border-bottom: 1px solid #252525;
+    /* Title & Tags Header */
+    .title-section {
+      padding: 18px 20px 14px 20px;
+      border-bottom: 1px solid var(--border-color);
     }
 
     .media-title {
-      font-size: 32px;
-      font-weight: 500;
+      font-size: 28px;
+      font-weight: 600;
       color: #f1f1f1;
       letter-spacing: -0.3px;
-      line-height: 1.25;
+      line-height: 1.3;
+      margin-bottom: 10px;
       word-break: break-word;
-      transition: opacity 0.2s;
     }
 
-    /* Viewer / Screen Area */
-    .screen-container {
+    .genre-tags {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .tag-pill {
+      background: #202020;
+      color: #bbb;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 4px;
+      border: 1px solid #303030;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .tag-pill.highlight {
+      background: rgba(255, 144, 0, 0.12);
+      border-color: rgba(255, 144, 0, 0.35);
+      color: var(--color-primary);
+    }
+
+    .tag-pill.red-hl {
+      background: rgba(228, 56, 40, 0.12);
+      border-color: rgba(228, 56, 40, 0.35);
+      color: #ff6154;
+    }
+
+    /* Screen / Image Area */
+    .screen-stage {
       position: relative;
       width: 100%;
       background: #000000;
-      aspect-ratio: 1024 / 510;
+      min-height: 380px;
+      max-height: 72vh;
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
       cursor: pointer;
+      user-select: none;
     }
 
-    .active-image {
+    .active-photo {
       max-width: 100%;
-      max-height: 100%;
+      max-height: 72vh;
+      width: auto;
+      height: auto;
       object-fit: contain;
       display: block;
-      transition: opacity 0.25s ease, transform 0.25s ease;
+      transition: opacity 0.2s ease, transform 0.2s ease;
     }
 
-    /* Screen Nav Overlay (Next / Prev arrows) */
+    /* Hover & Touch Overlay Controls */
     .screen-overlay {
       position: absolute;
       inset: 0;
@@ -164,22 +288,23 @@
       align-items: center;
       justify-content: space-between;
       padding: 0 16px;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, transparent 25%, transparent 75%, rgba(0,0,0,0.4) 100%);
       opacity: 0;
-      transition: opacity 0.2s ease;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, transparent 20%, transparent 80%, rgba(0,0,0,0.3) 100%);
+      transition: opacity 0.25s ease;
       pointer-events: none;
     }
 
-    .screen-container:hover .screen-overlay {
+    .screen-stage:hover .screen-overlay,
+    .screen-stage.touch-active .screen-overlay {
       opacity: 1;
     }
 
-    .nav-arrow-btn {
+    .nav-arrow {
       width: 48px;
       height: 48px;
       border-radius: 50%;
-      background: rgba(20, 20, 20, 0.75);
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(20, 20, 20, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.25);
       color: #ffffff;
       display: flex;
       align-items: center;
@@ -190,41 +315,74 @@
       backdrop-filter: blur(4px);
     }
 
-    .nav-arrow-btn:hover {
-      background: #e43828;
-      border-color: #e43828;
+    .nav-arrow:hover {
+      background: var(--color-red);
+      border-color: var(--color-red);
       transform: scale(1.08);
     }
 
-    .nav-arrow-btn:active {
+    .nav-arrow:active {
       transform: scale(0.95);
     }
 
-    .screen-top-badge {
+    .screen-top-indicator {
       position: absolute;
       top: 14px;
       right: 14px;
       background: rgba(0, 0, 0, 0.75);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      color: #eee;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
       padding: 4px 12px;
       border-radius: 4px;
       font-size: 13px;
-      font-weight: 600;
+      font-weight: 700;
       backdrop-filter: blur(4px);
       pointer-events: auto;
     }
 
-    /* Bottom Info & Stats Section (Exact replica of original image) */
-    .meta-details {
-      padding: 16px 16px 24px 16px;
+    .screen-zoom-hint {
+      position: absolute;
+      bottom: 14px;
+      left: 14px;
+      background: rgba(0, 0, 0, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #ccc;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      pointer-events: none;
+    }
+
+    /* Swipe Indicator Hint for Mobile */
+    .swipe-hint {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.8);
+      border: 1px solid #444;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      display: none;
+      pointer-events: none;
+      z-index: 20;
+    }
+
+    /* Control Bar & Stats Section (Original Meme Replica) */
+    .controls-section {
+      padding: 16px 16px 22px 16px;
       display: flex;
       flex-direction: column;
       gap: 12px;
     }
 
-    /* Row 1: Episodes (Left) and Stats (Right) */
-    .controls-row-1 {
+    /* Row 1: Episodes & Stats */
+    .action-row-1 {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -235,14 +393,14 @@
     .episodes-bar {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
     }
 
-    .ep-button {
-      height: 62px;
-      padding: 0 24px;
+    .ep-badge-btn {
+      height: 60px;
+      padding: 0 22px;
       border-radius: 8px;
-      font-size: 26px;
+      font-size: 25px;
       font-weight: 700;
       display: inline-flex;
       align-items: center;
@@ -254,59 +412,60 @@
       outline: none;
     }
 
-    .ep-button:active {
+    .ep-badge-btn:active {
       transform: scale(0.96);
     }
 
-    .ep-button.active {
-      background-color: #e43828;
+    .ep-badge-btn.active {
+      background-color: var(--color-red);
       color: #ffffff;
     }
 
-    .ep-button.inactive {
-      background-color: #242424;
+    .ep-badge-btn.inactive {
+      background-color: var(--bg-badge);
       color: #ffffff;
     }
 
-    .ep-button.inactive:hover {
-      background-color: #323232;
+    .ep-badge-btn.inactive:hover {
+      background-color: var(--bg-badge-hover);
     }
 
-    /* 4 Stat Badges matching original */
-    .stats-container {
+    /* 4 Stat Badges */
+    .stats-group {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
     }
 
-    .stat-pill {
-      height: 62px;
-      background-color: #242424;
+    .stat-box {
+      height: 60px;
+      background-color: var(--bg-badge);
       border-radius: 8px;
-      padding: 0 20px;
+      padding: 0 18px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      font-size: 25px;
+      gap: 8px;
+      font-size: 24px;
       font-weight: 600;
       color: #ffffff;
       cursor: pointer;
       transition: background-color 0.15s, transform 0.1s;
+      user-select: none;
     }
 
-    .stat-pill:hover {
-      background-color: #2e2e2e;
+    .stat-box:hover {
+      background-color: var(--bg-badge-hover);
     }
 
-    .stat-pill:active {
+    .stat-box:active {
       transform: scale(0.97);
     }
 
     .stat-icon {
-      width: 28px;
-      height: 28px;
+      width: 26px;
+      height: 26px;
       display: block;
       stroke: #ffffff;
       stroke-width: 2;
@@ -316,28 +475,28 @@
       flex-shrink: 0;
     }
 
-    .stat-icon.heart-filled {
+    .stat-icon.heart-fill {
       fill: #fa2b4d;
       stroke: #fa2b4d;
     }
 
-    .stat-pill.liked {
+    .stat-box.liked {
       background-color: #1f364d;
     }
-    .stat-pill.liked .stat-icon {
+    .stat-box.liked .stat-icon {
       stroke: #3897f0;
       fill: rgba(56, 151, 240, 0.25);
     }
 
-    .stat-pill.disliked {
+    .stat-box.disliked {
       background-color: #442222;
     }
-    .stat-pill.disliked .stat-icon {
+    .stat-box.disliked .stat-icon {
       stroke: #ff4747;
       fill: rgba(255, 71, 71, 0.25);
     }
 
-    .heart-pulse .stat-icon {
+    .heart-bounce .stat-icon {
       animation: heartPulse 0.45s ease;
     }
 
@@ -347,96 +506,158 @@
       100% { transform: scale(1); }
     }
 
-    /* Row 2: Code badge */
-    .controls-row-2 {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .code-pill {
-      height: 56px;
-      background-color: #242424;
-      border-radius: 8px;
-      padding: 0 20px;
-      font-size: 24px;
-      font-weight: 500;
-      color: #e5e5e5;
-      display: inline-flex;
-      align-items: center;
-      cursor: pointer;
-      transition: background-color 0.15s, transform 0.1s;
-    }
-
-    .code-pill:hover {
-      background-color: #303030;
-      color: #fff;
-    }
-
-    .code-pill:active {
-      transform: scale(0.98);
-    }
-
-    /* Gallery Section (Thư viện Album Hải Hentai) */
-    .gallery-section {
-      width: 100%;
-      max-width: 1024px;
-      margin: 0 auto 60px auto;
-      padding: 0 10px;
-    }
-
-    .gallery-header {
+    /* Row 2: Code badge & Actions */
+    .action-row-2 {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 20px;
-      padding-bottom: 12px;
-      border-bottom: 1px solid #262626;
+      gap: 12px;
+      flex-wrap: wrap;
     }
 
-    .gallery-title {
-      font-size: 22px;
-      font-weight: 700;
-      color: #ffffff;
+    .code-badge-left {
       display: flex;
       align-items: center;
       gap: 10px;
     }
 
-    .gallery-count {
-      color: #888;
-      font-size: 14px;
+    .code-pill {
+      height: 54px;
+      background-color: var(--bg-badge);
+      border-radius: 8px;
+      padding: 0 18px;
+      font-size: 22px;
+      font-weight: 500;
+      color: #e5e5e5;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      transition: background-color 0.15s;
     }
 
+    .code-pill:hover {
+      background-color: var(--bg-badge-hover);
+      color: #fff;
+    }
+
+    .btn-quick-share {
+      height: 54px;
+      background: #202020;
+      border: 1px solid #333;
+      color: #ccc;
+      border-radius: 8px;
+      padding: 0 16px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.15s;
+    }
+
+    .btn-quick-share:hover {
+      background: #2a2a2a;
+      color: #fff;
+      border-color: #555;
+    }
+
+    /* Tab Section (Thư viện / Bình luận / Giới thiệu) */
+    .content-tabs-wrap {
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto 60px auto;
+      padding: 0 12px;
+    }
+
+    .tabs-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 2px solid #222;
+      margin-bottom: 24px;
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: #888;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 12px 18px;
+      cursor: pointer;
+      position: relative;
+      transition: color 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .tab-btn:hover {
+      color: #fff;
+    }
+
+    .tab-btn.active {
+      color: var(--color-primary);
+    }
+
+    .tab-btn.active::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--color-primary);
+    }
+
+    .tab-badge {
+      background: #272727;
+      color: #aaa;
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 10px;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    /* Gallery Grid */
     .cards-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 18px;
     }
 
     .album-card {
-      background: #191919;
-      border-radius: 8px;
+      background: var(--bg-card);
+      border-radius: var(--radius);
       overflow: hidden;
       cursor: pointer;
-      border: 1px solid #2a2a2a;
-      transition: all 0.2s ease;
+      border: 1px solid var(--border-color);
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
       display: flex;
       flex-direction: column;
     }
 
     .album-card:hover {
       transform: translateY(-4px);
-      border-color: #e43828;
+      border-color: var(--color-red);
       box-shadow: 0 8px 24px rgba(228, 56, 40, 0.2);
     }
 
-    .album-card.active-card {
-      border-color: #e43828;
-      background: #201818;
+    .album-card.is-active {
+      border-color: var(--color-red);
+      background: #1c1515;
     }
 
-    .card-thumb-wrapper {
+    .card-thumb-wrap {
       position: relative;
       width: 100%;
       aspect-ratio: 16 / 9;
@@ -455,24 +676,23 @@
       transform: scale(1.05);
     }
 
-    .card-badge-ep {
+    .card-ep-tag {
       position: absolute;
       top: 8px;
       left: 8px;
-      background: #e43828;
+      background: var(--color-red);
       color: #fff;
       font-size: 11px;
       font-weight: 700;
       padding: 3px 8px;
       border-radius: 4px;
-      letter-spacing: 0.5px;
     }
 
-    .card-badge-hd {
+    .card-hd-tag {
       position: absolute;
       bottom: 8px;
       right: 8px;
-      background: rgba(0, 0, 0, 0.75);
+      background: rgba(0, 0, 0, 0.78);
       color: #fff;
       font-size: 11px;
       font-weight: 600;
@@ -480,17 +700,17 @@
       border-radius: 3px;
     }
 
-    .card-info {
+    .card-body {
       padding: 14px 16px;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 6px;
     }
 
-    .card-title {
-      font-size: 16px;
+    .card-heading {
+      font-size: 15px;
       font-weight: 600;
-      color: #f0f0f0;
+      color: #f1f1f1;
       line-height: 1.35;
       display: -webkit-box;
       -webkit-line-clamp: 2;
@@ -498,22 +718,163 @@
       overflow: hidden;
     }
 
-    .card-meta-row {
+    .card-sub {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      color: #999;
+      color: #888;
       font-size: 12px;
       margin-top: 4px;
     }
 
-    .card-code {
-      background: #2c2c2c;
-      color: #ff9000;
+    .card-code-txt {
+      background: #252525;
+      color: var(--color-primary);
       padding: 2px 6px;
       border-radius: 3px;
       font-weight: 600;
       font-family: monospace;
+    }
+
+    /* Comments Section */
+    .comments-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 20px;
+    }
+
+    .comment-form {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .user-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #2e2e2e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+      border: 1px solid #444;
+    }
+
+    .comment-input-wrap {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .comment-input {
+      width: 100%;
+      padding: 12px 14px;
+      background: #0f0f0f;
+      border: 1px solid #333;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 14px;
+      resize: vertical;
+      min-height: 70px;
+      outline: none;
+      font-family: inherit;
+    }
+
+    .comment-input:focus {
+      border-color: var(--color-primary);
+    }
+
+    .comment-actions {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .btn-submit-comment {
+      background: var(--color-primary);
+      color: #000;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 5px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .btn-submit-comment:hover {
+      background: #ffaa33;
+    }
+
+    .comments-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .comment-item {
+      display: flex;
+      gap: 12px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #222;
+    }
+
+    .comment-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .comment-body {
+      flex: 1;
+    }
+
+    .comment-author-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .comment-author {
+      font-weight: 700;
+      font-size: 14px;
+      color: #eee;
+    }
+
+    .comment-time {
+      font-size: 11px;
+      color: #777;
+    }
+
+    .comment-text {
+      font-size: 14px;
+      color: #ccc;
+      line-height: 1.4;
+    }
+
+    /* About Section */
+    .about-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 24px;
+      line-height: 1.7;
+      color: #bbb;
+      font-size: 15px;
+    }
+
+    .about-card h3 {
+      color: #fff;
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    .about-card ul {
+      margin-left: 20px;
+      margin-top: 8px;
     }
 
     /* Lightbox Modal */
@@ -525,7 +886,7 @@
       display: none;
       align-items: center;
       justify-content: center;
-      padding: 20px;
+      padding: 16px;
     }
 
     .lightbox-modal.open {
@@ -533,18 +894,17 @@
     }
 
     .lightbox-img {
-      max-width: 95vw;
+      max-width: 96vw;
       max-height: 92vh;
       object-fit: contain;
       border-radius: 4px;
-      box-shadow: 0 0 30px rgba(0,0,0,0.8);
     }
 
     .lightbox-close {
       position: absolute;
-      top: 20px;
-      right: 24px;
-      background: rgba(40, 40, 40, 0.8);
+      top: 16px;
+      right: 20px;
+      background: rgba(40, 40, 40, 0.85);
       border: 1px solid #555;
       color: #fff;
       width: 44px;
@@ -559,8 +919,111 @@
     }
 
     .lightbox-close:hover {
-      background: #e43828;
-      border-color: #e43828;
+      background: var(--color-red);
+      border-color: var(--color-red);
+    }
+
+    /* Share Modal */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.78);
+      z-index: 2500;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(4px);
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-box {
+      background: #1c1c1c;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 24px;
+      width: 90%;
+      max-width: 460px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    }
+
+    .modal-title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .modal-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .modal-close-btn {
+      background: none;
+      border: none;
+      color: #888;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .share-link-input {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .share-input-txt {
+      flex: 1;
+      background: #111;
+      border: 1px solid #444;
+      padding: 10px 12px;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 13px;
+      outline: none;
+    }
+
+    .btn-copy-url {
+      background: var(--color-primary);
+      color: #000;
+      border: none;
+      padding: 0 16px;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .social-share-btns {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .social-btn {
+      background: #262626;
+      border: 1px solid #383838;
+      color: #ddd;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .social-btn:hover {
+      background: #333;
+      color: #fff;
     }
 
     /* Toast Notification */
@@ -587,74 +1050,189 @@
       opacity: 1;
     }
 
-    /* Responsive Queries */
-    @media (max-width: 960px) {
-      .media-title {
-        font-size: 24px;
-      }
-      .ep-button {
-        height: 50px;
-        padding: 0 16px;
-        font-size: 20px;
-      }
-      .stat-pill {
-        height: 50px;
-        padding: 0 14px;
-        font-size: 19px;
-        gap: 8px;
-      }
-      .stat-icon {
-        width: 22px;
-        height: 22px;
-      }
-      .code-pill {
-        height: 48px;
-        font-size: 19px;
-        padding: 0 16px;
-      }
+    /* Footer */
+    .site-footer {
+      width: 100%;
+      background: #111111;
+      border-top: 1px solid var(--border-color);
+      padding: 30px 20px 40px 20px;
+      color: #777;
+      font-size: 13px;
+      text-align: center;
+      margin-top: auto;
     }
 
-    @media (max-width: 640px) {
+    .footer-content {
+      max-width: 1024px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .footer-disclaimer {
+      max-width: 650px;
+      font-size: 12px;
+      color: #666;
+    }
+
+    /* ==============================================================
+       MOBILE RESPONSIVE MEDIA QUERIES (Phone: 320px - 768px)
+       ============================================================== */
+    @media (max-width: 768px) {
       .site-nav {
-        padding: 10px 14px;
+        padding: 8px 12px;
         flex-wrap: wrap;
       }
       .nav-links {
         display: none;
       }
-      .search-box {
+      .search-bar {
         width: 140px;
+        padding: 5px 10px;
       }
-      .title-header {
-        padding: 16px 14px 12px 14px;
-      }
-      .media-title {
+      .brand-logo {
         font-size: 19px;
       }
-      .ep-button {
-        height: 42px;
-        padding: 0 14px;
-        font-size: 17px;
-      }
-      .stats-container {
-        gap: 8px;
-      }
-      .stat-pill {
-        height: 42px;
-        padding: 0 10px;
+      .brand-logo .brand-badge {
         font-size: 15px;
+        padding: 1px 6px;
+      }
+      .btn-share-top {
+        padding: 5px 10px;
+        font-size: 12px;
+      }
+
+      .main-app {
+        margin: 8px auto 20px auto;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+      }
+
+      .title-section {
+        padding: 14px 14px 10px 14px;
+      }
+      .media-title {
+        font-size: 20px;
+        line-height: 1.3;
+      }
+
+      /* Screen area on phone */
+      .screen-stage {
+        min-height: 280px;
+        max-height: 60vh;
+      }
+      .active-photo {
+        max-height: 60vh;
+      }
+
+      .nav-arrow {
+        width: 40px;
+        height: 40px;
+      }
+
+      /* Controls & Stats on phone */
+      .controls-section {
+        padding: 12px;
+        gap: 10px;
+      }
+
+      .action-row-1 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+      }
+
+      .episodes-bar {
+        width: 100%;
+        justify-content: flex-start;
+      }
+
+      .ep-badge-btn {
+        height: 48px;
+        padding: 0 18px;
+        font-size: 19px;
+        flex: 1;
+        max-width: 110px;
+      }
+
+      /* 4 stats full-width grid on mobile */
+      .stats-group {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         gap: 6px;
       }
+
+      .stat-box {
+        height: 46px;
+        padding: 0 6px;
+        font-size: 15px;
+        gap: 5px;
+        border-radius: 6px;
+      }
+
       .stat-icon {
         width: 18px;
         height: 18px;
       }
-      .code-pill {
-        height: 42px;
-        font-size: 16px;
+
+      .action-row-2 {
+        flex-direction: row;
+        justify-content: space-between;
       }
+
+      .code-pill {
+        height: 44px;
+        font-size: 16px;
+        padding: 0 14px;
+      }
+
+      .btn-quick-share {
+        height: 44px;
+        font-size: 13px;
+        padding: 0 12px;
+      }
+
+      .content-tabs-wrap {
+        padding: 0 8px;
+      }
+
+      .tabs-header {
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 4px;
+      }
+
+      .tab-btn {
+        padding: 10px 14px;
+        font-size: 14px;
+      }
+
       .cards-grid {
         grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .social-share-btns {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .stat-box {
+        font-size: 13px;
+        gap: 3px;
+        padding: 0 4px;
+      }
+      .stat-icon {
+        width: 15px;
+        height: 15px;
+      }
+      .media-title {
+        font-size: 18px;
       }
     }
   </style>
@@ -663,84 +1241,108 @@
 
   <!-- Top Navigation Bar -->
   <header class="site-nav">
-    <a href="#" class="brand-logo" onclick="selectEpisode(0); return false;">
-      HẢI<span class="brand-badge">HENTAI</span>
-    </a>
+    <div class="nav-left">
+      <a href="#" class="brand-logo" onclick="switchEpisode(0); return false;" title="Hải Hentai Official">
+        HẢI<span class="brand-badge">HENTAI</span>
+      </a>
 
-    <nav class="nav-links">
-      <a href="#" class="nav-link active" onclick="selectEpisode(0); return false;">Album Tuyển Chọn</a>
-      <a href="#gallerySection" class="nav-link">Thư Viện Ảnh</a>
-      <a href="https://github.com/PVM-05/HAI.EXE" target="_blank" class="nav-link">GitHub Repo</a>
-    </nav>
+      <nav class="nav-links">
+        <a href="#" class="nav-link active" onclick="switchEpisode(0); return false;">Trang Chủ</a>
+        <a href="#contentTabs" class="nav-link" onclick="switchTab('tabGallery')">Thư Viện Album</a>
+        <a href="#contentTabs" class="nav-link" onclick="switchTab('tabComments')">Bình Luận</a>
+        <a href="#contentTabs" class="nav-link" onclick="switchTab('tabAbout')">Giới Thiệu</a>
+      </nav>
+    </div>
 
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Tìm kiếm album...">
+    <div class="nav-right">
+      <div class="search-bar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" placeholder="Tìm kiếm tác phẩm...">
+      </div>
+
+      <button class="btn-share-top" id="btnTopShare" title="Chia sẻ trang web">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        Chia sẻ
+      </button>
     </div>
   </header>
 
-  <!-- Main Viewer (Exact Meme Screenshot replica) -->
-  <main class="main-wrapper">
+  <!-- Main Player Application (Meme Layout Replica) -->
+  <main class="main-app">
 
-    <!-- Title Section -->
-    <section class="title-header">
-      <h1 class="media-title" id="displayTitle">Thanh niên bị nấc ngẩn người trong giờ học</h1>
+    <!-- Title & Tags Header -->
+    <section class="title-section">
+      <h1 class="media-title" id="mediaTitle">Thanh niên bị nấc ngẩn người trong giờ học</h1>
+      <div class="genre-tags">
+        <span class="tag-pill highlight">⚡ Vietsub</span>
+        <span class="tag-pill red-hl">🔥 Hot Tuần Này</span>
+        <span class="tag-pill">🎯 Học Đường</span>
+        <span class="tag-pill">⏳ Tạm Dừng Thời Gian</span>
+        <span class="tag-pill" id="qualityTag">4K Ultra HD</span>
+      </div>
     </section>
 
-    <!-- Screen / Image Area -->
-    <section class="screen-container" id="screenViewer" title="Nhấp vào để xem ảnh phóng to">
-      <img src="./images/nac_ngan_nguoi.jpg" alt="Meme preview" class="active-image" id="mainDisplayImg">
+    <!-- Screen Stage Area -->
+    <section class="screen-stage" id="screenStage" title="Nhấp để phóng to toàn màn hình hoặc vuốt để chuyển tập">
+      <img src="./images/nac_ngan_nguoi.jpg" alt="Hải Hentai Meme Review" class="active-photo" id="activePhoto">
 
       <!-- Navigation Arrows Overlay -->
       <div class="screen-overlay">
-        <button class="nav-arrow-btn" id="btnPrev" title="Tập trước (Phím mũi tên Trái)">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+        <button class="nav-arrow" id="btnPrev" title="Tập trước (Phím ← hoặc vuốt phải)">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
         </button>
-        <button class="nav-arrow-btn" id="btnNext" title="Tập tiếp theo (Phím mũi tên Phải)">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        <button class="nav-arrow" id="btnNext" title="Tập tiếp (Phím → hoặc vuốt trái)">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
         </button>
       </div>
 
-      <div class="screen-top-badge" id="screenCounter">Tập 1 / 2</div>
+      <div class="screen-top-indicator" id="epIndicator">Tập 1 / 2</div>
+      <div class="screen-zoom-hint">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+        Bấm phóng to
+      </div>
+
+      <div class="swipe-hint" id="swipeHint">Đã chuyển tập</div>
     </section>
 
-    <!-- Meta Details & Statistics Section -->
-    <section class="meta-details">
-      <!-- Row 1: Episodes and Stats -->
-      <div class="controls-row-1">
-        <!-- Episode badges (#1, #2) -->
-        <div class="episodes-bar" id="episodesContainer">
+    <!-- Controls & Stats Bar (Authentic Screenshot Look) -->
+    <section class="controls-section">
+      <!-- Row 1: Episodes and 4 Stats Badges -->
+      <div class="action-row-1">
+        <!-- Episode switcher badges -->
+        <div class="episodes-bar" id="episodesGroup">
           <!-- Dynamically populated -->
         </div>
 
-        <!-- 4 Stats Badges matching screenshot -->
-        <div class="stats-container">
-          <!-- Like -->
-          <div class="stat-pill" id="pillLike" title="Thích">
-            <span class="stat-val" id="valLike">2.884</span>
+        <!-- 4 Stats Badges matching original screenshot -->
+        <div class="stats-group">
+          <!-- 1. Like -->
+          <div class="stat-box" id="boxLike" title="Thích tác phẩm">
+            <span class="stat-num" id="numLike">2.884</span>
             <svg class="stat-icon" viewBox="0 0 24 24">
               <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>
             </svg>
           </div>
 
-          <!-- Dislike -->
-          <div class="stat-pill" id="pillDislike" title="Không thích">
-            <span class="stat-val" id="valDislike">1.374</span>
+          <!-- 2. Dislike -->
+          <div class="stat-box" id="boxDislike" title="Không thích">
+            <span class="stat-num" id="numDislike">1.374</span>
             <svg class="stat-icon" viewBox="0 0 24 24">
               <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-3"/>
             </svg>
           </div>
 
-          <!-- Heart -->
-          <div class="stat-pill" id="pillHeart" title="Tỷ lệ yêu thích">
-            <span class="stat-val" id="valHeart">68%</span>
-            <svg class="stat-icon heart-filled" viewBox="0 0 24 24">
+          <!-- 3. Heart -->
+          <div class="stat-box" id="boxHeart" title="Tỷ lệ yêu thích">
+            <span class="stat-num" id="numHeart">68%</span>
+            <svg class="stat-icon heart-fill" viewBox="0 0 24 24">
               <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
             </svg>
           </div>
 
-          <!-- Views -->
-          <div class="stat-pill" id="pillView" title="Lượt xem">
-            <span class="stat-val" id="valView">3.3M</span>
+          <!-- 4. Views -->
+          <div class="stat-box" id="boxView" title="Lượt xem">
+            <span class="stat-num" id="numView">3.3M</span>
             <svg class="stat-icon" viewBox="0 0 24 24">
               <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
               <circle cx="12" cy="12" r="3"/>
@@ -749,38 +1351,160 @@
         </div>
       </div>
 
-      <!-- Row 2: Code badge (CMT8-1945) -->
-      <div class="controls-row-2">
-        <div class="code-pill" id="pillCode" title="Nhấp để sao chép mã tác phẩm">
-          CMT8-1945
+      <!-- Row 2: Code badge & Quick Actions -->
+      <div class="action-row-2">
+        <div class="code-badge-left">
+          <div class="code-pill" id="boxCode" title="Nhấp để sao chép mã">
+            <span id="txtCode">CMT8-1945</span>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#ff9000" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </div>
         </div>
+
+        <button class="btn-quick-share" id="btnQuickShare">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          Chia Sẻ Link
+        </button>
       </div>
     </section>
   </main>
 
-  <!-- Gallery Section -->
-  <section class="gallery-section" id="gallerySection">
-    <div class="gallery-header">
-      <h2 class="gallery-title">🔥 Thư Viện Album Hải Hentai</h2>
-      <span class="gallery-count" id="galleryCount">2 tác phẩm</span>
+  <!-- Content Tabs (Gallery / Comments / About) -->
+  <section class="content-tabs-wrap" id="contentTabs">
+    <div class="tabs-header">
+      <button class="tab-btn active" id="tabBtnGallery" onclick="switchTab('tabGallery')">
+        📷 Thư Viện Album <span class="tab-badge" id="badgeCount">2</span>
+      </button>
+      <button class="tab-btn" id="tabBtnComments" onclick="switchTab('tabComments')">
+        💬 Bình Luận <span class="tab-badge" id="badgeCommentCount">3</span>
+      </button>
+      <button class="tab-btn" id="tabBtnAbout" onclick="switchTab('tabAbout')">
+        ℹ️ Thông Tin Tác Phẩm
+      </button>
     </div>
 
-    <div class="cards-grid" id="cardsGrid">
-      <!-- Dynamically generated cards -->
+    <!-- Tab 1: Gallery Cards -->
+    <div class="tab-content active" id="tabGallery">
+      <div class="cards-grid" id="cardsContainer">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+
+    <!-- Tab 2: Comments Section -->
+    <div class="tab-content" id="tabComments">
+      <div class="comments-box">
+        <form class="comment-form" id="commentForm">
+          <div class="user-avatar">😎</div>
+          <div class="comment-input-wrap">
+            <textarea class="comment-input" id="commentTextInput" placeholder="Viết bình luận của bạn về tác phẩm này..." required></textarea>
+            <div class="comment-actions">
+              <button type="submit" class="btn-submit-comment">Gửi bình luận</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="comments-list" id="commentsList">
+          <div class="comment-item">
+            <div class="user-avatar">🔥</div>
+            <div class="comment-body">
+              <div class="comment-author-row">
+                <span class="comment-author">Otaku_Chính_Hiệu</span>
+                <span class="comment-time">10 phút trước</span>
+              </div>
+              <p class="comment-text">Tập 2 dừng thời gian biểu cảm khó đỡ thật sự =))) Đỉnh nóc kịch trần bay phấp phới!</p>
+            </div>
+          </div>
+
+          <div class="comment-item">
+            <div class="user-avatar">👑</div>
+            <div class="comment-body">
+              <div class="comment-author-row">
+                <span class="comment-author">Thánh_Hóng_247</span>
+                <span class="comment-time">2 giờ trước</span>
+              </div>
+              <p class="comment-text">Mã CMT8-1945 huyền thoại đây rồi. Khi nào ra tập 3 vậy admin ơi, hóng quá!</p>
+            </div>
+          </div>
+
+          <div class="comment-item">
+            <div class="user-avatar">⚡</div>
+            <div class="comment-body">
+              <div class="comment-author-row">
+                <span class="comment-author">Wibu_Chúa_VN</span>
+                <span class="comment-time">5 giờ trước</span>
+              </div>
+              <p class="comment-text">Giao diện xem mượt trên điện thoại xịn xò thật, cho 10 sao nhé!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 3: About / Meme Lore -->
+    <div class="tab-content" id="tabAbout">
+      <div class="about-card">
+        <h3>Về Bộ Sưu Tập Hải Hentai</h3>
+        <p>Bộ sưu tập tổng hợp các khoảnh khắc meme hài hước đậm chất giải trí theo phong cách anime & video streaming độc đáo.</p>
+        <ul>
+          <li><b>Tập 1 (CMT8-1945):</b> Thanh niên bị nấc ngẩn người trong giờ học với nét mặt thẫn thờ bất hủ.</li>
+          <li><b>Tập 2 (GDJ-1945):</b> Gakuen de jikan - Kẻ ngưng đọng thời gian học đường và ánh mắt lém lỉnh.</li>
+        </ul>
+        <p style="margin-top: 14px; font-size: 13px; color: #888;">
+          * Tất cả hình ảnh và mã số trên trang web chỉ mang tính chất giải trí, trào phúng, không chứa nội dung nhạy cảm hoặc độc hại.
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- Lightbox Modal -->
+  <!-- Fullscreen Lightbox Modal -->
   <div class="lightbox-modal" id="lightboxModal">
     <button class="lightbox-close" id="btnCloseLightbox" title="Đóng (ESC)">✕</button>
-    <img src="" alt="Full preview" class="lightbox-img" id="lightboxImg">
+    <img src="" alt="Zoom preview" class="lightbox-img" id="lightboxImg">
+  </div>
+
+  <!-- Share Modal -->
+  <div class="modal-backdrop" id="shareModal">
+    <div class="modal-box">
+      <div class="modal-title-row">
+        <h3 class="modal-title">Chia Sẻ Tác Phẩm</h3>
+        <button class="modal-close-btn" id="btnCloseShare">✕</button>
+      </div>
+
+      <div class="share-link-input">
+        <input type="text" class="share-input-txt" id="shareLinkUrl" readonly value="https://pvm-05.github.io/hai_hentai/">
+        <button class="btn-copy-url" id="btnCopyShareLink">Sao chép</button>
+      </div>
+
+      <div class="social-share-btns">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://pvm-05.github.io/hai_hentai/" target="_blank" class="social-btn">
+          Facebook
+        </a>
+        <a href="https://t.me/share/url?url=https://pvm-05.github.io/hai_hentai/&text=Xem+Album+Hải+Hentai+cực+bá" target="_blank" class="social-btn">
+          Telegram
+        </a>
+        <a href="https://twitter.com/intent/tweet?url=https://pvm-05.github.io/hai_hentai/&text=Album+Hải+Hentai+tuyển+chọn" target="_blank" class="social-btn">
+          Twitter / X
+        </a>
+      </div>
+    </div>
   </div>
 
   <!-- Toast Notification -->
-  <div class="toast-msg" id="toastMsg">Thông báo</div>
+  <div class="toast-msg" id="toastMsg">Đã cập nhật</div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="brand-logo" style="font-size: 18px;">
+        HẢI<span class="brand-badge" style="font-size: 15px;">HENTAI</span>
+      </div>
+      <p class="footer-disclaimer">
+        Hải Hentai Hub © 2024. Trang web phục vụ mục đích giải trí và meme sáng tạo. Bảo lưu mọi quyền.
+      </p>
+    </div>
+  </footer>
 
   <script>
-    // Album Data
+    // Data List
     const albumList = [
       {
         id: 1,
@@ -791,7 +1515,7 @@
         dislikes: "1.374",
         heart: "68%",
         views: "3.3M",
-        quality: "4K HD"
+        quality: "4K Ultra HD"
       },
       {
         id: 2,
@@ -802,167 +1526,220 @@
         dislikes: "128",
         heart: "98%",
         views: "5.7M",
-        quality: "1080P"
+        quality: "1080P Full HD"
       }
     ];
 
     let currentIndex = 0;
 
-    // Elements
-    const displayTitle = document.getElementById('displayTitle');
-    const mainDisplayImg = document.getElementById('mainDisplayImg');
-    const screenCounter = document.getElementById('screenCounter');
-    const episodesContainer = document.getElementById('episodesContainer');
-    const cardsGrid = document.getElementById('cardsGrid');
-    const galleryCount = document.getElementById('galleryCount');
-    const searchInput = document.getElementById('searchInput');
+    // DOM Elements
+    const mediaTitle = document.getElementById('mediaTitle');
+    const activePhoto = document.getElementById('activePhoto');
+    const epIndicator = document.getElementById('epIndicator');
+    const qualityTag = document.getElementById('qualityTag');
+    const episodesGroup = document.getElementById('episodesGroup');
+    const cardsContainer = document.getElementById('cardsContainer');
+    const badgeCount = document.getElementById('badgeCount');
 
-    const valLike = document.getElementById('valLike');
-    const valDislike = document.getElementById('valDislike');
-    const valHeart = document.getElementById('valHeart');
-    const valView = document.getElementById('valView');
-    const pillCode = document.getElementById('pillCode');
+    const numLike = document.getElementById('numLike');
+    const numDislike = document.getElementById('numDislike');
+    const numHeart = document.getElementById('numHeart');
+    const numView = document.getElementById('numView');
+    const txtCode = document.getElementById('txtCode');
 
-    const pillLike = document.getElementById('pillLike');
-    const pillDislike = document.getElementById('pillDislike');
-    const pillHeart = document.getElementById('pillHeart');
+    const boxLike = document.getElementById('boxLike');
+    const boxDislike = document.getElementById('boxDislike');
+    const boxHeart = document.getElementById('boxHeart');
+    const boxCode = document.getElementById('boxCode');
 
     const btnPrev = document.getElementById('btnPrev');
     const btnNext = document.getElementById('btnNext');
-    const screenViewer = document.getElementById('screenViewer');
+    const screenStage = document.getElementById('screenStage');
+    const swipeHint = document.getElementById('swipeHint');
 
     const lightboxModal = document.getElementById('lightboxModal');
     const lightboxImg = document.getElementById('lightboxImg');
     const btnCloseLightbox = document.getElementById('btnCloseLightbox');
+
+    const shareModal = document.getElementById('shareModal');
+    const btnTopShare = document.getElementById('btnTopShare');
+    const btnQuickShare = document.getElementById('btnQuickShare');
+    const btnCloseShare = document.getElementById('btnCloseShare');
+    const btnCopyShareLink = document.getElementById('btnCopyShareLink');
+    const shareLinkUrl = document.getElementById('shareLinkUrl');
     const toastMsg = document.getElementById('toastMsg');
 
-    function notify(text) {
+    const searchInput = document.getElementById('searchInput');
+
+    // Toast helper
+    function showToast(text) {
       toastMsg.textContent = text;
       toastMsg.classList.add('show');
-      clearTimeout(window._toastTimeout);
-      window._toastTimeout = setTimeout(() => {
+      clearTimeout(window._tTimer);
+      window._tTimer = setTimeout(() => {
         toastMsg.classList.remove('show');
       }, 2300);
     }
 
     // Render Episode Buttons
     function renderEpisodeButtons() {
-      episodesContainer.innerHTML = '';
+      episodesGroup.innerHTML = '';
       albumList.forEach((item, idx) => {
         const btn = document.createElement('button');
-        btn.className = `ep-button ${idx === currentIndex ? 'active' : 'inactive'}`;
+        btn.className = `ep-badge-btn ${idx === currentIndex ? 'active' : 'inactive'}`;
         btn.textContent = `#${item.id}`;
         btn.title = item.title;
-        btn.addEventListener('click', () => {
-          selectEpisode(idx);
-        });
-        episodesContainer.appendChild(btn);
+        btn.addEventListener('click', () => switchEpisode(idx));
+        episodesGroup.appendChild(btn);
       });
     }
 
-    // Render Album Grid Cards
-    function renderCards(filterText = '') {
-      cardsGrid.innerHTML = '';
+    // Render Gallery Cards
+    function renderGalleryCards(query = '') {
+      cardsContainer.innerHTML = '';
       const filtered = albumList.filter(item => 
-        item.title.toLowerCase().includes(filterText.toLowerCase()) || 
-        item.code.toLowerCase().includes(filterText.toLowerCase())
+        item.title.toLowerCase().includes(query.toLowerCase()) || 
+        item.code.toLowerCase().includes(query.toLowerCase())
       );
 
-      galleryCount.textContent = `${filtered.length} tác phẩm`;
+      badgeCount.textContent = filtered.length;
 
       filtered.forEach(item => {
         const originalIndex = albumList.findIndex(a => a.id === item.id);
         const card = document.createElement('article');
-        card.className = `album-card ${originalIndex === currentIndex ? 'active-card' : ''}`;
+        card.className = `album-card ${originalIndex === currentIndex ? 'is-active' : ''}`;
         card.innerHTML = `
-          <div class="card-thumb-wrapper">
+          <div class="card-thumb-wrap">
             <img src="${item.image}" alt="${item.title}" class="card-thumb" loading="lazy">
-            <span class="card-badge-ep">TẬP ${item.id}</span>
-            <span class="card-badge-hd">${item.quality}</span>
+            <span class="card-ep-tag">TẬP ${item.id}</span>
+            <span class="card-hd-tag">${item.quality}</span>
           </div>
-          <div class="card-info">
-            <h3 class="card-title">${item.title}</h3>
-            <div class="card-meta-row">
-              <span class="card-code">${item.code}</span>
+          <div class="card-body">
+            <h3 class="card-heading">${item.title}</h3>
+            <div class="card-sub">
+              <span class="card-code-txt">${item.code}</span>
               <span>👁️ ${item.views} • ❤️ ${item.heart}</span>
             </div>
           </div>
         `;
         card.addEventListener('click', () => {
-          selectEpisode(originalIndex);
+          switchEpisode(originalIndex);
           window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-        cardsGrid.appendChild(card);
+        cardsContainer.appendChild(card);
       });
     }
 
-    // Select and Switch Episode
-    function selectEpisode(index) {
+    // Switch Episode Function
+    function switchEpisode(index) {
       if (index < 0) index = albumList.length - 1;
       if (index >= albumList.length) index = 0;
       currentIndex = index;
 
       const current = albumList[currentIndex];
 
-      // Smooth switch transition
-      mainDisplayImg.style.opacity = '0';
+      activePhoto.style.opacity = '0';
+      activePhoto.style.transform = 'scale(0.98)';
       setTimeout(() => {
-        mainDisplayImg.src = current.image;
-        mainDisplayImg.style.opacity = '1';
-      }, 150);
+        activePhoto.src = current.image;
+        activePhoto.style.opacity = '1';
+        activePhoto.style.transform = 'scale(1)';
+      }, 140);
 
-      displayTitle.textContent = current.title;
-      valLike.textContent = current.likes;
-      valDislike.textContent = current.dislikes;
-      valHeart.textContent = current.heart;
-      valView.textContent = current.views;
-      pillCode.textContent = current.code;
-      screenCounter.textContent = `Tập ${currentIndex + 1} / ${albumList.length}`;
+      mediaTitle.textContent = current.title;
+      qualityTag.textContent = current.quality;
+      numLike.textContent = current.likes;
+      numDislike.textContent = current.dislikes;
+      numHeart.textContent = current.heart;
+      numView.textContent = current.views;
+      txtCode.textContent = current.code;
+      epIndicator.textContent = `Tập ${currentIndex + 1} / ${albumList.length}`;
 
-      // Reset like/dislike status
-      pillLike.classList.remove('liked');
-      pillDislike.classList.remove('disliked');
+      boxLike.classList.remove('liked');
+      boxDislike.classList.remove('disliked');
 
       renderEpisodeButtons();
-      renderCards(searchInput.value);
+      renderGalleryCards(searchInput.value);
     }
 
-    // Prev / Next Buttons
+    // Prev / Next
     btnPrev.addEventListener('click', (e) => {
       e.stopPropagation();
-      selectEpisode(currentIndex - 1);
+      switchEpisode(currentIndex - 1);
     });
 
     btnNext.addEventListener('click', (e) => {
       e.stopPropagation();
-      selectEpisode(currentIndex + 1);
+      switchEpisode(currentIndex + 1);
     });
 
-    // Keyboard navigation
+    // Touch Swipe Support for Phones
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    screenStage.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      touchStartY = e.changedTouches[0].screenY;
+      screenStage.classList.add('touch-active');
+    }, { passive: true });
+
+    screenStage.addEventListener('touchend', (e) => {
+      const touchEndX = e.changedTouches[0].screenX;
+      const touchEndY = e.changedTouches[0].screenY;
+      const diffX = touchEndX - touchStartX;
+      const diffY = touchEndY - touchStartY;
+
+      // Check if horizontal swipe was intentional (more horizontal than vertical)
+      if (Math.abs(diffX) > 45 && Math.abs(diffX) > Math.abs(diffY)) {
+        if (diffX < 0) {
+          // Swiped Left -> Next
+          switchEpisode(currentIndex + 1);
+          triggerSwipeFeedback('Tập tiếp theo ➔');
+        } else {
+          // Swiped Right -> Prev
+          switchEpisode(currentIndex - 1);
+          triggerSwipeFeedback('⬅ Tập trước đó');
+        }
+      }
+
+      setTimeout(() => screenStage.classList.remove('touch-active'), 1500);
+    }, { passive: true });
+
+    function triggerSwipeFeedback(msg) {
+      swipeHint.textContent = msg;
+      swipeHint.style.display = 'block';
+      clearTimeout(window._swTimer);
+      window._swTimer = setTimeout(() => {
+        swipeHint.style.display = 'none';
+      }, 700);
+    }
+
+    // Keyboard Shortcuts
     window.addEventListener('keydown', (e) => {
       if (lightboxModal.classList.contains('open')) {
         if (e.key === 'Escape') closeLightbox();
-        if (e.key === 'ArrowLeft') selectEpisode(currentIndex - 1), openLightbox(albumList[currentIndex].image);
-        if (e.key === 'ArrowRight') selectEpisode(currentIndex + 1), openLightbox(albumList[currentIndex].image);
+        if (e.key === 'ArrowLeft') switchEpisode(currentIndex - 1), openLightbox(albumList[currentIndex].image);
+        if (e.key === 'ArrowRight') switchEpisode(currentIndex + 1), openLightbox(albumList[currentIndex].image);
         return;
       }
 
-      if (e.key === 'ArrowLeft') selectEpisode(currentIndex - 1);
-      if (e.key === 'ArrowRight') selectEpisode(currentIndex + 1);
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+      if (e.key === 'ArrowLeft') switchEpisode(currentIndex - 1);
+      if (e.key === 'ArrowRight') switchEpisode(currentIndex + 1);
     });
 
-    // Lightbox handling
+    // Lightbox
     function openLightbox(src) {
       lightboxImg.src = src;
       lightboxModal.classList.add('open');
     }
-
     function closeLightbox() {
       lightboxModal.classList.remove('open');
     }
 
-    screenViewer.addEventListener('click', (e) => {
-      if (e.target.closest('.nav-arrow-btn')) return;
+    screenStage.addEventListener('click', (e) => {
+      if (e.target.closest('.nav-arrow')) return;
       openLightbox(albumList[currentIndex].image);
     });
 
@@ -971,48 +1748,128 @@
       if (e.target === lightboxModal) closeLightbox();
     });
 
-    // Copy Code
-    pillCode.addEventListener('click', () => {
-      const code = pillCode.textContent.trim();
+    // Copy Code Badge
+    boxCode.addEventListener('click', () => {
+      const code = txtCode.textContent.trim();
       navigator.clipboard.writeText(code).then(() => {
-        notify(`Đã sao chép mã: ${code}`);
+        showToast(`Đã sao chép mã: ${code}`);
       }).catch(() => {
-        notify(`Mã tác phẩm: ${code}`);
+        showToast(`Mã: ${code}`);
       });
     });
 
-    // Interactive Stats
-    pillLike.addEventListener('click', () => {
-      const isLiked = pillLike.classList.toggle('liked');
+    // Like / Dislike / Heart Interactions
+    boxLike.addEventListener('click', () => {
+      const isLiked = boxLike.classList.toggle('liked');
       if (isLiked) {
-        pillDislike.classList.remove('disliked');
-        notify('Đã thích tác phẩm 👍');
+        boxDislike.classList.remove('disliked');
+        showToast('Đã thích tác phẩm 👍');
       }
     });
 
-    pillDislike.addEventListener('click', () => {
-      const isDisliked = pillDislike.classList.toggle('disliked');
+    boxDislike.addEventListener('click', () => {
+      const isDisliked = boxDislike.classList.toggle('disliked');
       if (isDisliked) {
-        pillLike.classList.remove('liked');
-        notify('Đã không thích 👎');
+        boxLike.classList.remove('liked');
+        showToast('Đã không thích 👎');
       }
     });
 
-    pillHeart.addEventListener('click', () => {
-      pillHeart.classList.remove('heart-pulse');
-      void pillHeart.offsetWidth;
-      pillHeart.classList.add('heart-pulse');
-      notify('Đã thả tim vào album ❤️');
+    boxHeart.addEventListener('click', () => {
+      boxHeart.classList.remove('heart-bounce');
+      void boxHeart.offsetWidth;
+      boxHeart.classList.add('heart-bounce');
+      showToast('Đã thả tim vào album ❤️');
+    });
+
+    // Tab Switching
+    window.switchTab = function(tabId) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+      if (tabId === 'tabGallery') document.getElementById('tabBtnGallery').classList.add('active');
+      if (tabId === 'tabComments') document.getElementById('tabBtnComments').classList.add('active');
+      if (tabId === 'tabAbout') document.getElementById('tabBtnAbout').classList.add('active');
+
+      document.getElementById(tabId).classList.add('active');
+    };
+
+    // Comment Form Handling
+    const commentForm = document.getElementById('commentForm');
+    const commentTextInput = document.getElementById('commentTextInput');
+    const commentsList = document.getElementById('commentsList');
+    const badgeCommentCount = document.getElementById('badgeCommentCount');
+
+    let totalComments = 3;
+
+    commentForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const content = commentTextInput.value.trim();
+      if (!content) return;
+
+      totalComments++;
+      badgeCommentCount.textContent = totalComments;
+
+      const item = document.createElement('div');
+      item.className = 'comment-item';
+      item.innerHTML = `
+        <div class="user-avatar">😎</div>
+        <div class="comment-body">
+          <div class="comment-author-row">
+            <span class="comment-author">Bạn (Khách)</span>
+            <span class="comment-time">Vừa xong</span>
+          </div>
+          <p class="comment-text">${escapeHtml(content)}</p>
+        </div>
+      `;
+
+      commentsList.prepend(item);
+      commentTextInput.value = '';
+      showToast('Bình luận của bạn đã được đăng thành công!');
+    });
+
+    function escapeHtml(str) {
+      const div = document.createElement('div');
+      div.textContent = str;
+      return div.innerHTML;
+    }
+
+    // Share Modal & Web Share API
+    function openShare() {
+      if (navigator.share) {
+        navigator.share({
+          title: '🔥 Album Hải Hentai - Tuyển Chọn 4K',
+          text: 'Xem trọn bộ meme Hải Hentai: CMT8-1945 và Gakuen de jikan cực nét!',
+          url: window.location.href.includes('github.io') ? window.location.href : 'https://pvm-05.github.io/hai_hentai/'
+        }).catch(() => {});
+      } else {
+        shareLinkUrl.value = window.location.href.includes('github.io') ? window.location.href : 'https://pvm-05.github.io/hai_hentai/';
+        shareModal.classList.add('open');
+      }
+    }
+
+    btnTopShare.addEventListener('click', openShare);
+    btnQuickShare.addEventListener('click', openShare);
+    btnCloseShare.addEventListener('click', () => shareModal.classList.remove('open'));
+    shareModal.addEventListener('click', (e) => {
+      if (e.target === shareModal) shareModal.classList.remove('open');
+    });
+
+    btnCopyShareLink.addEventListener('click', () => {
+      shareLinkUrl.select();
+      navigator.clipboard.writeText(shareLinkUrl.value).then(() => {
+        showToast('Đã sao chép liên kết chia sẻ!');
+      });
     });
 
     // Live search
     searchInput.addEventListener('input', (e) => {
-      renderCards(e.target.value.trim());
+      renderGalleryCards(e.target.value.trim());
     });
 
-    // Initialize
+    // Init
     renderEpisodeButtons();
-    renderCards();
+    renderGalleryCards();
   </script>
 </body>
 </html>
